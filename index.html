@@ -3,97 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>No Roots — Official EPK</title>
+
+<title>NO ROOTS — Soul Pop-Rock</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 
+/* GENERAL */
+
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0e0e0e;
-    color:white;
+    background:#0f0f0f;
+    color:#f5f5f5;
+    font-family:'Montserrat', sans-serif;
+    line-height:1.6;
 }
 
-header{
-    background:black;
+h1,h2{
+    font-family:'Playfair Display', serif;
+    letter-spacing:2px;
+}
+
+/* MENU */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(0,0,0,0.8);
+    padding:15px;
     text-align:center;
-    padding:20px;
+    z-index:1000;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+    margin:0 20px;
+    font-weight:300;
 }
 
-nav a:hover{
-    color:#bbb;
-}
+/* SECTIONS */
 
-/* HERO IMAGE */
-.hero{
-    background:url("groupe.jpg") center/cover no-repeat;
-    height:80vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-}
-
-.hero-content{
-    background:rgba(0,0,0,0.6);
-    padding:30px;
-    border-radius:8px;
-}
-
-section{
+.section{
     max-width:900px;
     margin:auto;
-    padding:60px 20px;
+    padding:80px 20px;
 }
 
-h2{
-    border-bottom:1px solid #444;
-    padding-bottom:10px;
-}
+/* HERO */
 
-/* CONTACT */
-.contact-grid{
+header{
+    height:100vh;
+    background:url("Pochette album NO ROOTS.png") center/cover;
     display:flex;
-    gap:40px;
-    flex-wrap:wrap;
+    flex-direction:column;
     justify-content:center;
-}
-
-.contact-card{
+    align-items:center;
     text-align:center;
-    max-width:260px;
 }
 
-.contact-card img{
-    width:100%;
-    border-radius:10px;
-    margin-bottom:15px;
-    border:2px solid #333;
+header h1{
+    font-size:70px;
+    margin:0;
+}
+
+.tagline{
+    font-style:italic;
+    margin-top:10px;
+    color:#d4af37;
 }
 
 .button{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 20px;
-    background:white;
+    margin-top:30px;
+    padding:14px 28px;
+    background:#d4af37;
     color:black;
     text-decoration:none;
     font-weight:bold;
     border-radius:4px;
 }
 
+/* LISTES */
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    margin:8px 0;
+}
+
+/* EPK */
+
+.epk-box{
+    background:#151515;
+    padding:30px;
+    border-radius:6px;
+    text-align:center;
+}
+
+.epk-box a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 24px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:4px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+    background:#111;
+}
+
+.contact-photos{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.contact-photos img{
+    width:220px;
+    border-radius:8px;
+}
+
+/* FOOTER */
+
 footer{
     text-align:center;
     padding:30px;
-    border-top:1px solid #333;
-    color:#aaa;
+    font-size:14px;
+    color:#999;
 }
 
 </style>
@@ -101,69 +150,137 @@ footer{
 
 <body>
 
+<!-- MENU -->
+<nav>
+<a href="index.html">Accueil</a>
+<a href="discographie.html">Discographie</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
 <header>
-    <h1>NO ROOTS</h1>
-    <nav>
-        <a href="#about">Le groupe</a>
-        <a href="discographie.html">Discographie</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h1>NO ROOTS</h1>
+<p>Soul Pop-Rock</p>
+<p class="tagline">“Songs rooted in soul, carried by hope”</p>
+<a class="button" href="#presentation">Découvrir</a>
 </header>
 
-<!-- PHOTO GROUPE -->
-<div class="hero">
-    <div class="hero-content">
-        <h2>You Open The Way</h2>
-        <p>Album original — Rock indépendant</p>
-
-        <a class="button" href="discographie.html">
-            Écouter l’album
-        </a>
-    </div>
-</div>
-
 <!-- PRESENTATION -->
-<section id="about">
+<section class="section" id="presentation">
 
-<h2>Présentation</h2>
+<h2>Présentation du projet</h2>
 
 <p>
-No Roots est un projet musical original porté par des compositions
-personnelles mêlant rock, émotion et énergie live.
+NO ROOTS est un projet Soul Pop-Rock originaire de la Drôme,
+porté par des compositions originales mêlant énergie pop-rock
+et profondeur soul. Le groupe développe un univers musical
+spirituel et organique, où la musique devient un espace de
+rencontre et d’émotion partagée.
 </p>
 
 <p>
-Après plusieurs mois de création et de production,
-le groupe prépare la sortie de l’album
-<strong>You Open The Way</strong>.
-</p>
-
-<p>
-Le projet est pensé pour la scène, la rencontre avec le public
-et la collaboration avec musiciens et professionnels.
+Le projet s’articule autour de la préparation de l’album
+<strong>You Open the Way</strong>, pensé comme une traversée musicale
+entre introspection et puissance collective.
 </p>
 
 </section>
 
+<!-- FORMATION -->
+<section class="section">
+
+<h2>Formation live</h2>
+
+<ul>
+<li>Chant lead — Sonia</li>
+<li>Guitare électro-acoustique — Didier</li>
+<li>Guitare électrique</li>
+<li>Basse</li>
+<li>Batterie</li>
+<li>Claviers</li>
+<li>Chœurs</li>
+</ul>
+
+</section>
+
+<!-- BIO -->
+<section class="section">
+
+<h2>Biographie</h2>
+
+<p>
+NO ROOTS est un projet musical Soul Pop-Rock né dans la Drôme,
+entre Romans-sur-Isère et Saint-Donat-sur-l’Herbasse.
+Porté par une écriture sincère et une recherche d’authenticité sonore,
+le groupe développe un univers musical accessible et profondément habité.
+</p>
+
+<p>
+Entre intensité rock et profondeur soul, NO ROOTS propose
+une expérience immersive et chaleureuse, privilégiant la
+connexion avec le public et l’émotion partagée.
+</p>
+
+</section>
+
+<!-- UNIVERS LIVE -->
+<section class="section">
+
+<h2>Univers Live</h2>
+
+<p>
+Une expérience scénique immersive où l’énergie du pop-rock
+rencontre la profondeur émotionnelle de la soul.
+</p>
+
+<ul>
+<li>Arrangements organiques</li>
+<li>Dynamique collective</li>
+<li>Interprétation sincère</li>
+<li>Ambiance spirituelle accessible à tous publics</li>
+</ul>
+
+</section>
+
+<!-- EPK -->
+<section class="section">
+
+<h2>Electronic Press Kit</h2>
+
+<div class="epk-box">
+
+<p>
+Téléchargez le dossier artistique complet de NO ROOTS
+pour la programmation, la presse et les partenaires.
+</p>
+
+<a href="Dossier_artistique_NO_ROOTS.pdf" target="_blank">
+Télécharger l’EPK (PDF)
+</a>
+
+</div>
+
+</section>
+
 <!-- CONTACT -->
-<section id="contact">
+<section class="section contact" id="contact">
 
 <h2>Contact</h2>
 
-<div class="contact-grid">
+<p><strong>Didier & Sonia</strong></p>
+<p>📞 06 67 38 00 50</p>
+<p>✉️ siredidier@outlook.fr</p>
 
-<div class="contact-card">
+<div class="contact-photos">
+
+<div>
 <img src="Didier.jpeg" alt="Didier">
-<h3>Didier</h3>
-<p>Composition • Direction artistique</p>
-<p>contact@no-roots.fr</p>
+<p>Didier</p>
 </div>
 
-<div class="contact-card">
+<div>
 <img src="Sonia.jpeg" alt="Sonia">
-<h3>Sonia</h3>
-<p>Chant • Communication</p>
-<p>booking@no-roots.fr</p>
+<p>Sonia</p>
 </div>
 
 </div>
@@ -171,7 +288,7 @@ et la collaboration avec musiciens et professionnels.
 </section>
 
 <footer>
-© 2026 No Roots — Electronic Press Kit
+NO ROOTS — Soul Pop-Rock | Programmation 2026
 </footer>
 
 </body>
