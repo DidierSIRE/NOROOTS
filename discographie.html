@@ -79,7 +79,6 @@ footer{
 <h1>Discographie</h1>
 <h2>You Open the Way — Album</h2>
 
-
 <div class="track"><strong>01 — Don’t play with me</strong>
 <audio controls><source src="01-Dont-play-with-me.mp3" type="audio/mpeg"></audio></div>
 
@@ -151,6 +150,22 @@ footer{
 <footer>
 NO ROOTS — Soul Pop-Rock | Programmation 2026
 </footer>
+
+<!-- SCRIPT AUTO-STOP AUDIO -->
+<script>
+const players = document.querySelectorAll("audio");
+
+players.forEach(player => {
+    player.addEventListener("play", () => {
+        players.forEach(other => {
+            if(other !== player){
+                other.pause();
+                other.currentTime = 0;
+            }
+        });
+    });
+});
+</script>
 
 </body>
 </html>
