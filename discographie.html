@@ -14,7 +14,7 @@
 
 :root{
     --menu-height:80px;
-    --hero-height:300px;
+    --hero-height:380px; /* HERO PLUS GRAND */
 }
 
 /* ================= GENERAL ================= */
@@ -73,15 +73,15 @@ nav a{
 .hero h2{
     font-family:'Playfair Display', serif;
     opacity:0.8;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
-/* VIDEO CONTENUE DANS HERO */
+/* ================= VIDEO ================= */
 
 .video-container{
-    width:90%;
-    max-width:600px;
-    max-height:170px;
+    width:92%;
+    max-width:720px;      /* PLUS LARGE */
+    max-height:240px;     /* PLUS HAUTE */
     overflow:hidden;
     border-radius:10px;
     box-shadow:0 0 20px rgba(0,0,0,0.6);
@@ -99,7 +99,7 @@ nav a{
     max-width:900px;
     margin:auto;
     padding:
-        calc(var(--menu-height) + var(--hero-height) + 20px)
+        calc(var(--menu-height) + var(--hero-height) + 10px)
         20px
         60px;
 }
@@ -109,7 +109,7 @@ nav a{
     align-items:center;
     justify-content:space-between;
     gap:20px;
-    padding:12px 0;
+    padding:10px 0; /* PLUS COMPACT */
     border-bottom:1px solid #333;
 }
 
@@ -117,7 +117,7 @@ nav a{
     font-size:17px;
 }
 
-/* PLAYER COMPACT */
+/* PLAYER */
 
 audio{
     width:260px;
@@ -137,7 +137,7 @@ footer{
 @media (max-width:700px){
 
 :root{
-    --hero-height:340px;
+    --hero-height:420px;
 }
 
 .track{
@@ -150,7 +150,7 @@ audio{
 }
 
 .video-container{
-    max-height:200px;
+    max-height:260px;
 }
 
 }
